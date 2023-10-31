@@ -57,11 +57,24 @@ public class Shopping {
         this.totalAmount = totalAmount;
     }
 
+
+
     public LocalDate getLastPurchaseDate() {
         return lastPurchaseDate;
     }
 
     public void setLastPurchaseDate(LocalDate lastPurchaseDate) {
         this.lastPurchaseDate = lastPurchaseDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Shopping{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", isVip='" + isVip + '\'' +
+                ", totalAmount=" + totalAmount +
+                ", lastPurchaseDate=" + lastPurchaseDate +
+                '}';
     }
 }
